@@ -8,21 +8,21 @@
 
 void rev_string(char *n)
 {
-	int counter1 = 0;
-	int counter2 = 0;
-	char t;
+	int i = 0;
+	int j = 0;
+	char temp;
 
-	while (*(n + counter1) != '\0')
+	while (*(n + i) != '\0')
 	{
-		counter1++;
+		i++;
 	}
-	counter1--;
+	i--;
 
-	for (counter2 = 0; counter2 < counter1; counter2++, counter1--)
+	for (j = 0; j < i; j++, i--)
 	{
-		t = *(n + counter2);
-		*(n + counter2) = *(n + counetr1);
-		*(n + counter1) = t;
+		temp = *(n + j);
+		*(n + j) = *(n + i);
+		*(n + i) = temp;
 	}
 }
 
