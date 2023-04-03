@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _strspn - Entry point
  * @s: input
@@ -10,7 +11,7 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int count = 0;
 	int counterLoop;
 
-	for (; *s; s++)
+	while (*s)
 	{
 		for (counterLoop = 0; accept[counterLoop]; counterLoop++)
 		{
