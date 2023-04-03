@@ -12,7 +12,7 @@ void print_chessboard(char (*a)[8])
 	{
 		for (int j = 0; j < 8; j++)
 		{
-			printf("%c ", *(p + (i * 8) + j));
+			printf(*(p + (i * 8) + j));
 		}
 		printf("\n");
 	}
