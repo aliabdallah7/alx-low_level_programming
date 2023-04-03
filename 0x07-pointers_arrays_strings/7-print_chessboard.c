@@ -6,7 +6,6 @@
  */
 void print_chessboard(char (*a)[8])
 {
-	char *p = &a[0][0];
 	int i;
 	int j;
 
@@ -14,8 +13,7 @@ void print_chessboard(char (*a)[8])
 	{
 		for (j = 0; j < 8; j++)
 		{
-			_putchar(*p);
-			p++;
+			_putchar(a[i][j]);
 		}
 		_putchar('\n');
 	}
