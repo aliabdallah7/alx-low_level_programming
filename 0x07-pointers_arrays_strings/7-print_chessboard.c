@@ -12,7 +12,8 @@ void print_chessboard(char (*a)[8])
 	for (i = 0; i < 64; i++, p++)
 	{
 		_putchar(*p);
-		if ((i + 1) % 8 == 0) putchar('\n');
+		if ((i + 1) % 8 == 0)
+			_putchar('\n');
 	}
 }
 
