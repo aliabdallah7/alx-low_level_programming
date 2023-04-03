@@ -7,10 +7,10 @@
 void print_chessboard(char (*a)[8])
 {
 	char *p = &a[0][0];
-
-	for (int i = 0; i < 8; i++)
+	int i,j;
+	for (i = 0; i < 8; i++)
 	{
-		for (int j = 0; j < 8; j++)
+		for (j = 0; j < 8; j++)
 		{
 			_putchar(*(p + (i * 8) + j));
 		}
