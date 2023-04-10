@@ -3,15 +3,17 @@
 
 /**
  * atoi - converts a string to an integer
- * @s: string to be converted
+ * @str: string to be converted
  *
  * Return: the int converted from the string
  */
 int atoi(char *str)
 {
-	int result = 0;
-	int sign = 1;
-	int i = 0;
+	int result, sign, i;
+
+	result = 0;
+	sign = 1;
+	i = 0;
 
 	while (str[i] == ' ')
 	{
